@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+	<title>Tables</title>
+</head>	
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+}
+</style>
+</head>
+<body>
+
+<table style="width:25%">
+  <tr>
+    <th>Name</th>
+    <th>Student ID</th> 
+  </tr>
+  <tr>
+    <td>彭滄晏</td>
+    <td>1103549</td>
+  </tr>
+</table>
+
+</body>
+</html>
