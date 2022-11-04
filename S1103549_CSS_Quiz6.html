@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th {
+	background-color: #9FAFDF;
+    color: white;
+}
+
+th, td {
+  padding: 6px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  border: 1px solid black;
+}
+
+/*tr:hover {background-color: #ADD8E6;}*/
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+
+<body>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  <tr>
+    <td>Cang Yan</td>
+    <td>Peng</td>
+    
+  </tr>
+  <tr>
+    <td>Masaki</td>
+    <td>Hara</td>
+  </tr>
+  <tr>
+    <td>Hide</td>
+    <td>Yamagata</td>
+  </tr>
+</table>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+</body>
+</html>
