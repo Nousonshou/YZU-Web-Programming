@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>S1103549 Homework 1</title>
-  <style type="text/css">
+    
     <body>
       <div class="form" style="opacity:1;">
         <div class="form_header text-center"><h1> School Trip Registration Form</h1></div>
@@ -10,35 +10,40 @@
       <form>
         
         <div id="name">
-        <legend><span class="name"></span>Your basic info</legend>
-        <input class="firstname" type="text" name="first_name"><br>
-        <label class="firstname_label">First Name</label>
-        <input class="lastname" type="text" name="last_name">
-        <label class="lastname_label">Last Name</label>
+          <label for="firstname_label">First Name:</label><br>
+          <input class="firstname" type="text" name="first_name"><br><br>
+          <legend><span class="lastname"></span>Last Name:</legend>
+          <input class="lastname" type="text" name="last_name">
         </div>
-    
-        <h2 class="name">Student ID</h2>
-        <input class="Student-id" type="text" name="Student ID">
-    
-        <fieldset>
-          <legend><span class="name"></span>Your basic info</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
+    	<br>
+        
+           <div class="col-sm-6">
+          <label for= "country" class= "form-label">Country&nbsp;:&nbsp;</label>
+          <select name= "country">
+            <option value= "Taiwan"selected>Taiwan</option>
+            <option value= "Indonesia">Indonesia</option>
+            <option value= "Vietnam">Vietnum</option>
+            <option value= "Philippines" >Philippines</option>
+            <option value= "Malaysia">Malaysia</option>
+            <option value= "China">China</option>
+            <option value= "Japan">Japan</option>
+            <option value= "Korea">Korea</option>
+            <option value= "Other">Other</option>
+          </select>
+          </div><br>
+        <label for="student_id">Student ID:</label>
+        <input class="lastname" type="text" name="last_name"><br><br>
           
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email">
           
-          <label>How did you get this info:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
-        </fieldset>
-        
-        <fieldset>
-          <legend><span class="number"></span>Your profile</legend>
-          <label for="choice">Other:</label>
-          <textarea id="bio" name="user_bio"></textarea>
-        </fieldset>
-        <fieldset>
+          <label for="phone">Phone:</label>
+            <input class="number" type="text" name="phone">
+          
+          <br><br>
+          
+               
+          
         <label for="major">Major:</label>
         <select id="major" name="user_major">
             <option value="college_of_engineering">College Of Engineering</option>
@@ -47,14 +52,40 @@
             <option value="college_of_humanities_and_social_sciences"> College Of Humanities And Social Sciences</option>
             <option value="college_of_electrical_and_communication_engineering">College Of Electrical and Communication Engineering</option>
             <option value="other">Other</option>
-        </select>
+        </select><br><br>
+          
+          <legend><span class="name"></span>How did you know about the trip?</legend>
+
+        <label class="checkbox">
+          <input type="checkbox" id="GAO_email" value="source_gao_email" name="user_source">
+          <span class="light">GAO Email</span>
+        <label class="checkbox">
+          <input type="checkbox" id="portal" value="source_portal" name="user_source">
+          <span class="light">Portal</label>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="friend" value="source_friends" name="user_source">
+          <span class="light">Friend</label>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="flyer" value="source_friends" name="user_source">
+          <span class="light">Flyer</label>
+        </label><br>
+        <label class="checkbox">
+          <input type="checkbox" id="other" value="source_other" name="user_source">
+          <span class="light">Other:</label>
+        </label><br>
         
-          <label>Interests:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+    
+          <textarea id="extra_source" name="extra"></textarea><br><br>
+  
         
-        </fieldset>
+
+        
+          
+        
+       
+    
         <button type="submit">Sign Up</button>
       </form>
       
