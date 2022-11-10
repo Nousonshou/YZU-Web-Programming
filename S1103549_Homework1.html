@@ -3,21 +3,30 @@
   <title>S1103549 Homework 1</title>
   <style type="text/css">
     <body>
-
-      <form action="index.html" method="post">
+      <div class="form" style="opacity:1;">
+        <div class="form_header text-center"><h1> School Trip Registration Form</h1></div>
+        <div class="main">
       
-        <h1>School Trip Registration</h1>
+      <form>
         
+        <div id="name">
+        <legend><span class="name"></span>Your basic info</legend>
+        <input class="firstname" type="text" name="first_name"><br>
+        <label class="firstname_label">First Name</label>
+        <input class="lastname" type="text" name="last_name">
+        <label class="lastname_label">Last Name</label>
+        </div>
+    
+        <h2 class="name">Student ID</h2>
+        <input class="Student-id" type="text" name="Student ID">
+    
         <fieldset>
-          <legend><span class="number"></span>Your basic info</legend>
+          <legend><span class="name"></span>Your basic info</legend>
           <label for="name">Name:</label>
           <input type="text" id="name" name="user_name">
           
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email">
-          
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
           
           <label>How did you get this info:</label>
           <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
@@ -25,34 +34,19 @@
         </fieldset>
         
         <fieldset>
-          <legend><span class="number">2</span>Your profile</legend>
-          <label for="bio">Biography:</label>
+          <legend><span class="number"></span>Your profile</legend>
+          <label for="choice">Other:</label>
           <textarea id="bio" name="user_bio"></textarea>
         </fieldset>
         <fieldset>
-        <label for="job">Job Role:</label>
-        <select id="job" name="user_job">
-          <optgroup label="Web">
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="php_developor">PHP Developer</option>
-            <option value="python_developer">Python Developer</option>
-            <option value="rails_developer"> Rails Developer</option>
-            <option value="web_designer">Web Designer</option>
-            <option value="WordPress_developer">WordPress Developer</option>
-          </optgroup>
-          <optgroup label="Mobile">
-            <option value="Android_developer">Androild Developer</option>
-            <option value="iOS_developer">iOS Developer</option>
-            <option value="mobile_designer">Mobile Designer</option>
-          </optgroup>
-          <optgroup label="Business">
-            <option value="business_owner">Business Owner</option>
-            <option value="freelancer">Freelancer</option>
-          </optgroup>
-          <optgroup label="Other">
-            <option value="secretary">Secretary</option>
-            <option value="maintenance">Maintenance</option>
-          </optgroup>
+        <label for="major">Major:</label>
+        <select id="major" name="user_major">
+            <option value="college_of_engineering">College Of Engineering</option>
+            <option value="college_of_informatics">College Of Informatics</option>
+            <option value="college_of_management">College Of Management</option>
+            <option value="college_of_humanities_and_social_sciences"> College Of Humanities And Social Sciences</option>
+            <option value="college_of_electrical_and_communication_engineering">College Of Electrical and Communication Engineering</option>
+            <option value="other">Other</option>
         </select>
         
           <label>Interests:</label>
