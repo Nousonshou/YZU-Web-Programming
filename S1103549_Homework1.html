@@ -7,17 +7,27 @@
      background-position:center;
      background-attachment:fixed;
      background-size:cover;
-     font-family:sans-serif;
-     margin-top:40px;
+     font-family:Georgia;
+     margin-top:300px;
+     margin-bottom:300px;
      }
   .circle{
-           width:800px;
+           width:500px;
            margin:auto;
-           padding:10px 0px 10px 0px;
+           padding:0px 0px 10px 0px;
            text-align:center;
            border-radius: 15px 15px 15px 15px;
            border: 1px dotted #605481;
           }
+          
+   fieldset{   
+  		-webkit-border-radius: 15px;
+        width:350px;
+		vertical-align: middle;
+		text-align: center;
+		margin:auto;
+			}
+    
   .col-md-8{
            background-image:url(images/back10.png);
            background-size:cover;
@@ -32,8 +42,31 @@
   .card-header{
               color:black;
               text-align:center;
-              vertical-align:middle;text-center
+              vertical-align:middle;
+              text-center
               }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {	
+	-webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border radius:16px;
+  border: 1px solid #2d9fd9;
+  color:#030303;
+  width: 260px;
+  height:25px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 20px
+}
+
+input[type="text"]
+  
+  
   .card{
        opacity:0.7;
        }
@@ -44,40 +77,37 @@
  </head>
  <body>
  
-
+<h2 style= "text-align: center; font-size: 50px; text-decoration: underline; color: Black; text-shadow: 5px 5px 2px DarkGray;">School Trip</h2>
  
- <div class= "container">
  <div class= "circle">
  
-	<div class= "row">
-	<div class= "col-md-8 offset-md-2">
-		<font size="+8"><b>School Trip</b></font>
+
 		<br>
 		<br>
   
 <div class= "card">
-<font size="+6"><b>Registration Form</b></font>
+<h3 style= "text-align: center; font-size: 30px;"><b>RegistrationForm</b></h3>
 <div class= "card-body">
 <form class= "row g-2">
 
 <fieldset>
           <legend><span class="number">1</span>Student's Info</legend>
 <div class= "col-sm-6">
-  <label for= "firstName" class="form-label">First Name&nbsp;:&nbsp; </label>
+  <label for= "firstName" class="form-label">First Name </label><br>
   <input type= "text" class= "form-control" id= "firstName">
 </div>
 									
 <div class= "col-sm-6">
-	<label for ="lastName" class= "form-label">Last Name&nbsp;:&nbsp;</label>
+	<label for ="lastName" class= "form-label">Last Name</label><br>
 	<input type= "text" class= "form-control" id= "lastName">
 </div>
 
 <div class= "col-sm-6">
-	<label for= "studentID" class="form-label">Student ID&nbsp;:&nbsp;</label>
-	<input type= "studentID" class= "form-control" id= "student-ID">
+	<label for= "studentID" class="form-label">Student ID</label><br>
+	<input type= "text" class= "form-control" id= "student-ID">
 </div><br>
 <div class="col-sm-6">
-          <label for= "country" class= "form-label">Nationality&nbsp;:&nbsp;</label>
+          <label for= "country" class= "form-label">Nationality</label><br>
           <select name= "country">
 	    <option disabled="disabled" selected>--Choose Country</option>
             <option value= "Taiwan">Taiwan</option>
@@ -95,12 +125,12 @@
 
 <legend><span class="section"></span>Contact Info</legend>
 <div class= "col-sm-6">
-	<label for="mail" class="form-label">Email&nbsp;:&nbsp;</label>
+	<label for="mail" class="form-label">Email</label><br>
     <input type="email" id="mail" name="user_email">
-</div>
+</div><br>
 
 <div>
-	<label class="phone-number">Phone Number&nbsp;:&nbsp;</label>
+	<label class="phone-number">Phone</label><br>
    	<input class="number" type="text" name="phone">
 </div>
 
@@ -121,7 +151,7 @@
 <fieldset>
           <legend><span class="number">3</span>Trip Info</legend>
   
-<label for="destination">I will travel to::</label>
+<label for="destination">I will travel to:</label>
         <select id="destination" name="user_destination">
         	<option disabled="disabled" selected>--Choose Destination</option>
             <option value="college_of_engineering">Hualien</option>
@@ -161,6 +191,7 @@
      <br><button type="submit">Register</button>
         
    </fieldset>
+   <br>
       </form>
 	</footer>
    
