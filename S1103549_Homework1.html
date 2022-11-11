@@ -9,7 +9,7 @@
  </head>
  <body>
  
- <div class= "circle" style= "background-image:url(images/back9.png);border-radius: 15px 15px 15px 15px; border: 1px dotted #605481;">
+ <div class= "circle" style= "background-image:url(InnerContainerForm.jpg);border-radius: 15px 15px 15px 15px; border: 1px dotted #605481;">
  
  <div class= "container">
 	<div class= "row">
@@ -51,7 +51,9 @@
             <option value= "Other">Other</option>
           </select>
           </div><br>
+<fieldset>
 
+<legend><span class="section"></span>Contact Info</legend>
 <div class= "col-sm-6">
 	<label for="mail" class="form-label">Email&nbsp;:&nbsp;</label>
     <input type="email" id="mail" name="user_email">
@@ -62,7 +64,9 @@
    	<input class="number" type="text" name="phone">
 </div>
 
-<label for="major">Major:</label>
+</fieldset>
+
+<br><label for="major">Major:</label>
         <select id="major" name="user_major">
         	<option disabled="disabled" selected>--Choose Department</option>
             <option value="college_of_engineering">College Of Engineering</option>
@@ -75,7 +79,7 @@
 </fieldset><br>
 
 <fieldset>
-          <legend><span class="number">2</span>Trip Info</legend>
+          <legend><span class="number">3</span>Trip Info</legend>
   
 <label for="destination">I will travel to::</label>
         <select id="destination" name="user_destination">
@@ -109,46 +113,19 @@
                 
     
           <textarea id="extra_source" name="extra"></textarea><br><br>
+          
+     <label class="radio">
+     <input class="checkbox-last" type="radio" name="">
+     <span class="checkmark">Request Special Care </span><br>
     
-        <button type="submit">Register</button>
+     <br><button type="submit">Register</button>
         
    </fieldset>
-      
-      
       </form>
-          
-
-  
-    
-    <h2 id="student">Are you new to Taiwan? </h2>
-    
-    <label class="radio">
-     <input class="radio-one" type="radio" name="">
-     <span class="checkmark"></span>
-     Yes
-    </label>
-    <label class="radio">
-     <input class="radio-two" type="radio" name="">
-     <span class="checkmark"></span>
-     No
-    </label>
-    
-    <button class="submit">Register</button>
-    
-   </form>
-   </div>
-  <h2 class="padding">           </h2>
-  
-  <h1 class="optomized-for">This form is optimized for Edge and Chrome.</h1>
-  
-  <div class="explination">
-   <h2 class="p1">To create this form I started with a simple html form, an example of which can be found on my domain at webprogramming.bitninja.me/form. A few differences are made such as the Title, Check marks, and drop down menu being added as well as the submit button.</h2>
-
-   <h2 class="p2">The next step is to add the css. First the background for the page, then the background for the header of the registration form, then finally for the registration form itself.</h2>
-
-   <h2 class="p3">The final step is to add the css to each element. This consists of things such as color, positioning, spacing, and even hover behavior.</h2>
-  </div>
- </div>
- <h2 class="padding">           </h2>
- <body>
- </html>
+   
+	<footer>
+		<div class="container">
+          <hr>
+          <p class="text-end"><a href="#">Back to top</a></p>
+        </div>
+	</footer>
