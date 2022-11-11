@@ -4,6 +4,7 @@
   <title></title>
   <style type="text/css">
   body{
+     background-image:url(BodyBackgroundTaipei.webp);
      background-position:center;
      background-attachment:fixed;
      background-size:cover;
@@ -11,14 +12,16 @@
      margin-top:300px;
      margin-bottom:300px;
      }
-  .circle{
+  .main{
            width:500px;
            margin:auto;
            padding:0px 0px 10px 0px;
            text-align:center;
            border-radius: 15px 15px 15px 15px;
            border: 1px dotted #605481;
+           background-color: rgba(0, 0, 128, 0.3)
           }
+          
           
    fieldset{   
   		-webkit-border-radius: 15px;
@@ -60,7 +63,7 @@ select {
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border-radius: 20px
 }
 
@@ -79,7 +82,7 @@ input[type="text"]
  
 <h2 style= "text-align: center; font-size: 50px; text-decoration: underline; color: Black; text-shadow: 5px 5px 2px DarkGray;">School Trip</h2>
  
- <div class= "circle">
+ <div class= "main">
  
 
 		<br>
@@ -94,18 +97,18 @@ input[type="text"]
           <legend><span class="number">1</span>Student's Info</legend>
 <div class= "col-sm-6">
   <label for= "firstName" class="form-label">First Name </label><br>
-  <input type= "text" class= "form-control" id= "firstName">
+  <input type= "text" class= "form-control" id= "firstName" placeholder="Enter Your First Name">
 </div>
 									
 <div class= "col-sm-6">
 	<label for ="lastName" class= "form-label">Last Name</label><br>
-	<input type= "text" class= "form-control" id= "lastName">
+	<input type= "text" class= "form-control" id= "lastName" placeholder="Enter Your Last Name">
 </div>
 
 <div class= "col-sm-6">
 	<label for= "studentID" class="form-label">Student ID</label><br>
-	<input type= "text" class= "form-control" id= "student-ID">
-</div><br>
+	<input type= "text" class= "form-control" id= "student-ID" placeholder="Enter Your Student ID">
+</div>
 <div class="col-sm-6">
           <label for= "country" class= "form-label">Nationality</label><br>
           <select name= "country">
@@ -126,17 +129,17 @@ input[type="text"]
 <legend><span class="section"></span>Contact Info</legend>
 <div class= "col-sm-6">
 	<label for="mail" class="form-label">Email</label><br>
-    <input type="email" id="mail" name="user_email">
-</div><br>
+    <input type="email" id="mail" name="user_email" placeholder="Enter Your Email">
+</div>
 
 <div>
 	<label class="phone-number">Phone</label><br>
-   	<input class="number" type="text" name="phone">
+   	<input class="number" type="text" name="phone" placeholder="Enter Your Phone Number">
 </div>
 
 </fieldset>
 
-<br><label for="major">Major:</label>
+<br><label for="major">Major:</label><br>
         <select id="major" name="user_major">
         	<option disabled="disabled" selected>--Choose Department</option>
             <option value="college_of_engineering">College Of Engineering</option>
