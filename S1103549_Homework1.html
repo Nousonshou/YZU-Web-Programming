@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<head>
-  <title>S1103549 Homework 1</title>
-    
-    <body>
-      <div class="form" style="opacity:1;">
-        <div class="form_header text-center"><h1> School Trip Registration Form</h1></div>
-        <div class="main">
-      
-      <form>
-        
-        <div id="name">
-          <label for="firstname_label">First Name:</label><br>
-          <input class="firstname" type="text" name="first_name"><br><br>
-          <legend><span class="lastname"></span>Last Name:</legend>
-          <input class="lastname" type="text" name="last_name">
-        </div>
-    	<br>
-        
-           <div class="col-sm-6">
-          <label for= "country" class= "form-label">Country&nbsp;:&nbsp;</label>
+<html>
+ <head>
+  <title></title>
+  <style type="text/css">
+  
+ 	 
+  </style>
+ </head>
+ <body>
+ 
+ <div class= "circle" style= "background-image:url(images/back9.png);border-radius: 15px 15px 15px 15px; border: 1px dotted #605481;">
+ 
+ <div class= "container">
+	<div class= "row">
+		<div class= "col-md-8 offset-md-2" style= "background-image: url(images/back10.png);background-size: cover; border-radius: 20px;">
+  <h3 class="display-flex" style= "color: black; text-align: center; vertical-align: middle; font-size: 40px;"><b>School Trip</b></h3><br>
+  
+<div class= "card" style="opacity:0.7;">
+<div class="card-header" style= "color: black; text-align: center; vertical align: middle; text-center"><h4>Registration form</h4></div>
+<div class= "card-body" style= "background-image: url(images/back7.png);">
+<form class= "row g-2">
+
+<fieldset>
+          <legend><span class="number">1</span>Student's Info</legend>
+<div class= "col-sm-6">
+  <label for= "firstName" class="form-label">First Name&nbsp;:&nbsp; </label>
+  <input type= "text" class= "form-control" id= "firstName">
+</div>
+									
+<div class= "col-sm-6">
+	<label for ="lastName" class= "form-label">Last Name&nbsp;:&nbsp;</label>
+	<input type= "text" class= "form-control" id= "lastName">
+</div>
+
+<div class= "col-sm-6">
+	<label for= "studentID" class="form-label">Student ID&nbsp;:&nbsp;</label>
+	<input type= "studentID" class= "form-control" id= "student-ID">
+</div>
+<div class="col-sm-6">
+          <label for= "country" class= "form-label">Nationality&nbsp;:&nbsp;</label>
           <select name= "country">
             <option value= "Taiwan"selected>Taiwan</option>
             <option value= "Indonesia">Indonesia</option>
@@ -31,30 +51,41 @@
             <option value= "Other">Other</option>
           </select>
           </div><br>
-        <label for="student_id">Student ID:</label>
-        <input class="lastname" type="text" name="last_name"><br><br>
-          
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
-          
-          <label for="phone">Phone:</label>
-            <input class="number" type="text" name="phone">
-          
-          <br><br>
-          
-               
-          
-        <label for="major">Major:</label>
+
+<div class= "col-sm-6">
+	<label for="mail" class="form-label">Email&nbsp;:&nbsp;</label>
+    <input type="email" id="mail" name="user_email">
+</div>
+
+<div>
+	<label class="phone-number">Phone Number&nbsp;:&nbsp;</label>
+   	<input class="number" type="text" name="phone">
+</div>
+
+<label for="major">Major:</label>
         <select id="major" name="user_major">
+        	<option disabled="disabled" selected>--Choose Department</option>
             <option value="college_of_engineering">College Of Engineering</option>
             <option value="college_of_informatics">College Of Informatics</option>
             <option value="college_of_management">College Of Management</option>
             <option value="college_of_humanities_and_social_sciences"> College Of Humanities And Social Sciences</option>
             <option value="college_of_electrical_and_communication_engineering">College Of Electrical and Communication Engineering</option>
             <option value="other">Other</option>
+        </select>
+</fieldset><br>
+
+<fieldset>
+          <legend><span class="number">2</span>Trip Info</legend>
+  
+<label for="destination">I will travel to::</label>
+        <select id="destination" name="user_destination">
+        	<option disabled="disabled" selected>--Choose Destination</option>
+            <option value="college_of_engineering">Hualien</option>
+            <option value="college_of_informatics">Kaohsiung</option>
+            <option value="college_of_management">Taipei National Palace Museum</option>
         </select><br><br>
-          
-          <legend><span class="name"></span>How did you know about the trip?</legend>
+        
+<legend><span class="name"></span>How did you know about the trip?</legend>
 
         <label class="checkbox">
           <input type="checkbox" id="GAO_email" value="source_gao_email" name="user_source">
@@ -75,20 +106,49 @@
           <input type="checkbox" id="other" value="source_other" name="user_source">
           <span class="light">Other:</label>
         </label><br>
-        
+                
     
           <textarea id="extra_source" name="extra"></textarea><br><br>
-  
-        
-
-        
-          
-        
-       
     
-        <button type="submit">Sign Up</button>
-      </form>
+        <button type="submit">Register</button>
+        
+   </fieldset>
       
-    </body>
-    </head>
-</html>
+      
+      </form>
+          
+
+  
+    
+    <h2 id="student">Are you new to Taiwan? </h2>
+    
+    <label class="radio">
+     <input class="radio-one" type="radio" name="">
+     <span class="checkmark"></span>
+     Yes
+    </label>
+    <label class="radio">
+     <input class="radio-two" type="radio" name="">
+     <span class="checkmark"></span>
+     No
+    </label>
+    
+    <button class="submit">Register</button>
+    
+   </form>
+   </div>
+  <h2 class="padding">           </h2>
+  
+  <h1 class="optomized-for">This form is optimized for Edge and Chrome.</h1>
+  
+  <div class="explination">
+   <h2 class="p1">To create this form I started with a simple html form, an example of which can be found on my domain at webprogramming.bitninja.me/form. A few differences are made such as the Title, Check marks, and drop down menu being added as well as the submit button.</h2>
+
+   <h2 class="p2">The next step is to add the css. First the background for the page, then the background for the header of the registration form, then finally for the registration form itself.</h2>
+
+   <h2 class="p3">The final step is to add the css to each element. This consists of things such as color, positioning, spacing, and even hover behavior.</h2>
+  </div>
+ </div>
+ <h2 class="padding">           </h2>
+ <body>
+ </html>
