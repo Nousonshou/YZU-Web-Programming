@@ -28,7 +28,7 @@
       border-radius: 10px;
       border-left: 5px solid #4d5bf9;
       box-sizing: initial;
-      transition: width 0.5s;
+      transition: 0.5s;
       overflow-x: hidden;
     }
     
@@ -173,6 +173,7 @@
     .toggle ion-icon.close
     .toggle.active ion-icon.open {
       display: none;
+    }
     
   </style>
   <body>
@@ -213,7 +214,7 @@
       </ul>
     
     <div class="toggle">
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu" class="open"></ion-icon>
       <ion-icon name="close-circle-outline" class="close"></ion-icon>
     </div>
       
@@ -223,7 +224,7 @@
       <script>
         
         let menuToggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.');
+        let navigation = document.querySelector('.navigation');
         menuToggle.onclick = function() {
           menuToggle.classList.toggle('active');
           navigation.classList.toggle('active');
