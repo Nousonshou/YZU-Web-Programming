@@ -45,7 +45,7 @@ nav {
     margin-right: 25px;
 }
 
-.nav-left .logo {
+.nav-left .ion-icon {
     width: 130px;
 }
 
@@ -92,28 +92,28 @@ nav {
     margin-top: 15px;
 }
 
-.vid-list .thumbnail {
+.video-list .thumbnail {
     width: 100%;
     border-radius: 5px;
 }
 
-.vid-list .flex-div {
+.video-list .flex-div {
     align-items: flex-start;
     margin-top: 7px;
 }
 
-.vid-list .flex-div img {
+.video-list .flex-div img {
     width: 35px;
     margin-right: 10px;
     border-radius: 10px;
 }
 
-.vid-info {
+.video-info {
     color: white;
     font-size: 13px;
 }
 
-.vid-info a {
+.video-info a {
     color: whitesmoke;
     font-weight: 600;
     display: block;
