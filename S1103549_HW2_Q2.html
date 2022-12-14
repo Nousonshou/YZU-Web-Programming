@@ -4,6 +4,384 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S1103549_HW2_Q2</title>
   </head>
-  <style></style>
-  <body></body>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .body {
+      min-height: 100vh;
+      background: #4d5bf9;
+    }
+    
+    .navigation {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 70px;
+      bottom: 20px;
+      background: #4d5bf9;
+      border-radius: 10px;
+      border-left: 5px solid #4d5bf9;
+      box-sizing: initial;
+      transition: 0.5s;
+      overflow-x: hidden;
+    }
+    
+    .navigation ul {
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 5px;
+    }
+    
+    .navigation.active {
+      width: 300px;
+    }
+    
+    .navigation ul li {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    
+    .navigation ul li.active {
+      background: #ee82ee;
+    }
+      
+    .navigation ul li a {
+      position: relative;
+      display: block;
+      width: 100%;
+      display: flex;
+      text-decoration: none;
+      color: #ee82ee;
+    }
+    
+    .navigation ul li.active a {
+      color: #333;
+    }
+    
+    .navigation ul li b:nth-child(1) {
+      position: absolute;
+      display: none;
+      top: -20px;
+      height: 20px;
+      width: 100%;
+      background: #ee82ee;
+    }
+    
+    .navigation ul li b:nth-child(1)::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      border-bottom-right-radius: 20px;
+      background: #4d5bf9;
+    }
+    
+    .navigation ul li b:nth-child(2) {
+      position: absolute;
+      display: none;
+      bottom: -20px;
+      height: 20px;
+      width: 100%;
+      background: #ee82ee;
+    }
+    
+    .navigation ul li b:nth-child(2)::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 20px;
+      background: #4d5bf9;
+    }
+    
+    .navigation ul li.active b:nth-child(1),
+    .navigation ul li.active b:nth-child(2){
+      display: block;
+    }
+    
+    .navigation ul li.active a {
+      color: #4d5bf9;
+    }
+    
+    .navigation ul li a .icon {
+      position: relative;
+      display: block;
+      min-width: 60px;
+      height: 60px;
+      line-height: 70px;
+      text-align: center;
+    }
+    
+    .navigation ul li a .icon ion-icon {
+      font-size: 1.5em;
+    }
+    
+    .navigation ul li a .title {
+      position: relative;
+      display: block;
+      padding-left: 10px;
+      height: 60px;
+      line-height: 60px;
+      white-space: normal;
+    }
+    
+    .toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      background: #4d5bf9;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .toggle.active {
+      background: #800080;
+    }
+    
+    .toggle ion-icon {
+      position: absolute;
+      color: #4d5bf9;
+      font-size: 34px;
+      display: none;
+    }
+    
+    .toggle ion-icon.open,
+    .toggle.active ion-icon.close {
+      display: block;
+    }
+    
+    .toggle ion-icon.close
+    .toggle.active ion-icon.open {
+      display: none;
+    }
+    
+/*<!---------------------------Q2-------------------------------> */  
+    
+div.flavors {
+  border: 0px solid #ccc;
+  padding: 0px 45px 0px 45px;
+}
+
+div.flavors:hover {
+  border: 5px solid blue;
+}
+
+div.flavors img {
+  width: 100%;
+  height: auto;
+  
+}
+
+div.desc {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header{
+	text-align:center;
+	font-size:50px;
+	}
+.head{
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+	}
+.pics{
+	border: 5px solid black;
+	}
+
+    
+  </style>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li class="list active">
+          <b></b>
+          <b></b>
+          <a href= "https://nousonshou.github.io/YZU-Web-Programming/S1103549_HW2_Q2.html">
+            <span class="icon"><ion-icon name="ice-cream"></ion-icon></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <b></b>
+          <b></b>
+          <a href= "#">
+            <span class="icon"><ion-icon name="apps"></ion-icon></span>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li class="list">
+          <b></b>
+          <b></b>
+          <a href= "#">
+            <span class="icon"><ion-icon name="help-circle"></ion-icon></span>
+            <span class="title">About</span>
+          </a>
+        </li>
+        <li class="list">
+          <b></b>
+          <b></b>
+          <a href= "#">
+            <span class="icon"><ion-icon name="people"></ion-icon></span>
+            <span class="title">Contact</span>
+          </a>
+        </li>
+      </ul>
+    
+    <div class="toggle">
+      <ion-icon name="menu" class="open"></ion-icon>
+      <ion-icon name="close-circle-outline" class="close"></ion-icon>
+    </div>
+       
+        <h2 class="header">Gelati</h2>
+
+          <div class="menu">
+            <div class="flavors">
+                <div class="head">Fiordilatte</div>
+                <img class="pics" src="https://github.com/Nousonshou/YZU-Web-Programming/blob/main/Fiordilatte.webp" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+
+          <div class="menu">
+            <div class="flavors">
+              <div class="head">Fragola</div>
+                <img class="pics" src="https://github.com/Nousonshou/YZU-Web-Programming/blob/main/Fragola.webp" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="flavors">
+              <div class="head">Nocciola</div>
+                <img class="pics" src="https://github.com/Nousonshou/YZU-Web-Programming/blob/main/Nocciola.webp" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="flavors">
+              <div class="head">Pistacchio</div>
+                <img class="pics" src="https://github.com/Nousonshou/YZU-Web-Programming/blob/main/Pistacchio.webp" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="flavors">
+            <div class="head">Mint</div>
+                <img class="pics" src="flavors/mint.jpeg" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="flavors">
+              <div class="head">Chocolate & Peanut</div>
+                <img class="pics" src="flavors/penutbutter-chocolate.jpeg" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="flavors">
+              <div class="head">Strawberry</div>
+                <img class="pics" src="flavors/strawberry.jpg" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="flavors">
+              <div class="head">Vanilla</div>
+                <img class="pics" src="flavors/vinella.jpeg" width="300" height="200">
+              </a>
+              <div class="desc"><br><br><br></div>
+            </div>
+          </div>
+
+        
+      </div>
+      
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+      <script>
+        
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function() {
+          menuToggle.classList.toggle('active');
+          navigation.classList.toggle('active');
+        }
+        
+      //add active class in selected list item
+      let list = document.querySelectorAll('.list');
+      for (let i = 0; i < list.length; i++ ) {
+        list[i].onclick = function() {
+          let j = 0;
+          while ( j < list.length ) {
+            list[j++].className = 'list';
+          }
+          list[i].className = 'list active';
+        }
+      }
+      </script>
+  </body>
 </html>
