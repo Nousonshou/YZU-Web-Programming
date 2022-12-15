@@ -53,14 +53,16 @@ body {
 
 .middleSection .searchBox input {
     width: 600px;
+    height: 35px;
     border: 0;
     outline: 0;
     text-color: white;
     background: transparent;
 }
 
-.middleSection .searchBox img {
-    width: 15px;
+.middleSection .searchBox ion-icon {
+    width: 20px;
+    color: white;
 }
 
 .contentSection{
