@@ -44,17 +44,18 @@ body {
 }
 
 .middleSection .searchBox {
-    border: 1px solid #ccc;
-    display:block;
+    border: 2px solid #ccc;
+    display: block;
     margin: 0 auto;
     padding: 8px 12px;
     border-radius: 10px;
 }
 
 .middleSection .searchBox input {
-    width: 500px;
+    width: 600px;
     border: 0;
     outline: 0;
+    text-color: white;
     background: transparent;
 }
 
