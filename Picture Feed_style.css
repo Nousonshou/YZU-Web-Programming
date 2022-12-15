@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Gill Sans', sans-serif;
-    background-color: #000000;
+    background-color: #3c3c3c;
 }
 /*.navigationList {
     list-style: none;
@@ -30,7 +30,7 @@ body {
     display: flex;
 }
 
-.topSection .homeButton {
+.topSection .homeButton  ion-icon {
     width: 35px;
     color: white;
 }
