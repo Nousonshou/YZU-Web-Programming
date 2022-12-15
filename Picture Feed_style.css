@@ -31,10 +31,10 @@ body {
     display: flex;
 }
 
-/*.homeButton {
-    width: 22px;
-    margin-right: 25px;
-}*/
+.topSection .homeButton {
+    width: 35px;
+    color: white;
+}
 
 .middleSection {
     padding-top: 70px;
