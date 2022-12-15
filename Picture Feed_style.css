@@ -6,9 +6,8 @@
 
 body {
     font-family: 'Gill Sans', sans-serif;
-    background-color: linear-gradient(to bottom, #000000 50%, #666699 100%);
+    background-color: #3c3c3c;
 }
-
 /*.navigationList {
     list-style: none;
     display: flex;
@@ -23,7 +22,7 @@ body {
     padding: 40px;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: linear-gradient(to right, #000000 50%, #666699 100%);
+    background-image: linear-gradient(to right, #000000  , #666699);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -31,9 +30,9 @@ body {
     display: flex;
 }
 
-#topSection .homeButton {
+.topSection .homeButton {
     width: 35px;
-    color: #ffff;
+    color: white;
 }
 
 .middleSection {
@@ -45,7 +44,6 @@ body {
 }
 
 .middleSection .searchBox {
-
     border: 1px solid #ccc;
     display:block;
     margin: 0 auto;
