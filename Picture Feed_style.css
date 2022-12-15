@@ -31,9 +31,9 @@ body {
     display: flex;
 }
 
-.topSection .homeButton {
+#topSection .homeButton {
     width: 35px;
-    color: white;
+    color: #ffff;
 }
 
 .middleSection {
