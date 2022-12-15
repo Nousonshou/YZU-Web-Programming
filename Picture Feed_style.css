@@ -57,8 +57,17 @@ body {
     height: 33px;
     border: 0;
     outline: 0;
+    background: rgba(90,90,90,0.4);
+}
+
+.middleSection .seachBox input::placeholder {
     text-color: #ffffff;
-    background: transparent;
+    font-size: 27px;
+}
+
+::-webkit-input-placeholder {
+    text-color: #ffffff;
+    font-size: 27px;
 }
 
 .middleSection .searchBox ion-icon {
