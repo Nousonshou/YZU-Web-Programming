@@ -23,7 +23,7 @@ body {
     padding: 40px;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: #213749;
+    background-color: linear-gradient(to right, #000000 50%, #666699 100%);
     position: sticky;
     top: 0;
     z-index: 10;
