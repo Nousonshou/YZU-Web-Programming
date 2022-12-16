@@ -57,7 +57,7 @@ body {
 
 .middleSection .searchBox input {
     width: 600px;
-    height: 33px;
+    height: 35px;
     border: 0;
     outline: 0;
     background: rgba(192,192,192,0.4);
@@ -75,8 +75,11 @@ body {
 }
 
 .middleSection .searchBox ion-icon {
+    width: 30px;
     font-size: 25px;
     color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contentSection{
@@ -118,6 +121,8 @@ div.desc {
         padding: 8px 12px;
         border-radius: 14px;
         text-color: #ffffff;
+        justify-content: space-between;
+        align-items: center;
         /*background: rgba(192,192,192,0.4);*/
     }
 
