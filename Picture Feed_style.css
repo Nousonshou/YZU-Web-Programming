@@ -111,8 +111,7 @@ div.desc {
     }
     
     .middleSection .searchBox {
-        width: calc(33.3% - 15px);
-        height: 25px;
+        height: 30px;
         border: 2px solid #ccc;
         display: block;
         margin: 0 auto;
@@ -132,9 +131,14 @@ div.desc {
 
     .middleSection .seachBox input::placeholder {
         text-color: #ffffff;
-        font-size: 27px;
+        font-size: 18px;
         background: rgba(192,192,192,0.4);
     }
+
+    .middleSection .searchBox ion-icon {
+        font-size: 18px;
+        color: white;
+    }       
 }
 
 @media screen and (min-width: 736px) { 
