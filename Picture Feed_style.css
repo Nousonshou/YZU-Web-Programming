@@ -86,7 +86,7 @@ body {
     justify-content: space-between;
 }
 
-.photosGrid_Pictures {
+.photosGrid__Pictures {
     width: calc(33.3% - 2px);
     height: 30vw;
     background-position: center;
@@ -112,7 +112,7 @@ div.desc {
         margin: auto;
     }
 
-    .photosGrid_Pictures {
+    .photosGrid__Pictures {
         height: 293px;
     }
 }
