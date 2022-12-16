@@ -1,166 +1,158 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Gill Sans', sans-serif;
-    background-color: #333333;
+a {
+    text-decoration: none;
+    color: #5a5a5a;
 }
-/*.navigationList {
-    list-style: none;
+
+img {
+    cursor: pointer;
+}
+
+.flex-div {
     display: flex;
-    border-top: 1px solid #ccc;
+    align-items: center;
 }
 
-.navigationItem {
-
-
-}*/
-.topSection {
-    padding: 40px;
+nav {
+    padding: 10px 2%;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /*background-image: linear-gradient(to right, #000000  , #666699);*/
-    background: linear-gradient(to right, #000000 50%, #666699 100%);
-    position: sticky;
+    background: #4682B4;
+    position: sticky; /* to be probably modified*/
     top: 0;
     z-index: 10;
-    align-items: center;
-    display: flex;
 }
 
-.topSection .homeButton  ion-icon {
-    font-size: 25px;
-    color: white;
-    -webkit-box-reflect: below;
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
 }
 
-.middleSection {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+.nav-right .user-icon {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0;
 }
 
-.middleSection .searchBox {
-    border: 2px solid #ccc;
-    display: block;
-    margin: 0 auto;
+.nav-left .menu-icon {
+    width: 22px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 130px;
+}
+
+/*.nav-middle .direct-link {
+
+}*/ /* direct link function to be added later*/
+
+.nav-middle .search-box {
+    border: 1px solid #ccc;
+    margin-right: 15px;
     padding: 8px 12px;
-    border-radius: 14px;
-    text-color: #ffffff;
-    background: rgba(192,192,192,0.4);
+    border-radius: 10px;
 }
 
-.middleSection .searchBox input {
-    width: 600px;
-    height: 35px;
+.nav-middle .search-box input {
+    width: 500px;
     border: 0;
     outline: 0;
-    background: rgba(192,192,192,0.4);
+    background: transparent;
 }
 
-.middleSection .seachBox input::placeholder {
-    text-color: #ffffff;
-    font-size: 27px;
-    background: rgba(192,192,192,0.4);
+.nav-middle .search-box img {
+    width: 15px;
 }
 
-::-webkit-input-placeholder {
-    text-color: #ffffff;
-    font-size: 27px;
+/*------------------main top--------------*/ /*maybe insert search bar here*/
+/*.container { 
+    background: #4682B4;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.middleSection .searchBox ion-icon {
-    width: 30px;
-    font-size: 25px;
+.banner {
+    width: 100%;
+} */
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.vid-list .thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vid-list .flex-div {
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-div img {
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.vid-info {
     color: white;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 13px;
 }
 
-.contentSection{
-    border-top: 1px solid #ccc;
-    padding: 20px 18%;
+.vid-info a {
+    color: whitesmoke;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.photosGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.photosGrid__Pictures {
-    width: calc(33.3% - 2px);
-    height: 30vw;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 3px;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-
-@media screen and (max-width: 735px) {
-    
-    .topSection .homeButton  ion-icon {
-        font-size: 40px;
-        color: white;
+@media (max-width: 900px) {
+    .menu-icon {
+        display: none;
     }
-    
-    .middleSection .searchBox {
-        height: 30px;
-        border: 2px solid #ccc;
+
+    /* .sidebar {
+        display: none;
+    }*/
+
+    .container /*, large-container*/ {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-right img {
+        display: none;
+    }
+
+    .nav-right .user-icon {
         display: block;
-        margin: 0 auto;
-        padding: 8px 12px;
-        border-radius: 14px;
-        text-color: #ffffff;
-        justify-content: space-between;
-        align-items: center;
-        /*background: rgba(192,192,192,0.4);*/
+        width: 30px;
     }
 
-    .middleSection .searchBox input {
-        width: 170px;
-        height: 25px;
-        border: 0;
-        outline: 0;
-        background: rgba(192,192,192,0.4);
+    .nav-middle .search-box input {
+        width: 100px;
     }
 
-    .middleSection .seachBox input::placeholder {
-        text-color: #ffffff;
-        font-size: 18px;
-        background: rgba(192,192,192,0.4);
-    }
+    /*.nav-middle direct-link {
+        display: none;
+    }*/
 
-    .middleSection .searchBox ion-icon {
-        font-size: 18px;
-        color: white;
-    }       
+    /*.nav-left .home {
+        width: 30px;
+    }*/
 }
 
-@media screen and (min-width: 736px) { 
-    .photosGrid_Pictures {
-        width: calc(33.3% - 15px);
-        margin-bottom: 26px;
-    }
- }
-    
-    
-@media screen and (min-width: 981px) {
-    .contentSection{
-        max-width: : 935px;
-        margin: auto;
-    }
-
-    .photosGrid__Pictures {
-        height: 293px;
-    }
-}
