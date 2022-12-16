@@ -32,7 +32,7 @@ body {
 }
 
 .topSection .homeButton  ion-icon {
-    width: 35px;
+    font-size: 25px;
     color: white;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .middleSection .searchBox ion-icon {
-    width: 30px;
+    font-size: 30px;
     color: white;
 }
 
@@ -103,6 +103,12 @@ div.desc {
   }
 
 @media screen and (min-width: 736px) {
+    
+    .topSection .homeButton  ion-icon {
+        font-size: 40px;
+        color: white;
+    }
+    
     .photosGrid_Pictures {
         width: calc(33.3% - 15px);
         margin-bottom: 26px;
