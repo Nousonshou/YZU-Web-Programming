@@ -102,26 +102,23 @@ div.desc {
     text-align: center;
   }
 
-@media screen and (min-width: 736px) {
+@media screen and (max-width: 736px) {
     
     .topSection .homeButton  ion-icon {
         font-size: 40px;
         color: white;
     }
     
-    .photosGrid_Pictures {
-        width: calc(33.3% - 15px);
-        margin-bottom: 26px;
-    }
-    
     .middleSection .searchBox {
+        width: calc(33.3% - 15px);
+        height: 25px;
         border: 2px solid #ccc;
         display: block;
         margin: 0 auto;
         padding: 8px 12px;
         border-radius: 14px;
         text-color: #ffffff;
-        background: rgba(192,192,192,0.4);
+        /*background: rgba(192,192,192,0.4);*/
     }
 
     .middleSection .searchBox input {
@@ -139,6 +136,14 @@ div.desc {
     }
 }
 
+@media screen and (min-width: 736px) { 
+    .photosGrid_Pictures {
+        width: calc(33.3% - 15px);
+        margin-bottom: 26px;
+    }
+ }
+    
+    
 @media screen and (min-width: 981px) {
     .contentSection{
         max-width: : 935px;
