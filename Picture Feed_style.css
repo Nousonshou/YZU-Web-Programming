@@ -107,6 +107,30 @@ div.desc {
         width: calc(33.3% - 15px);
         margin-bottom: 26px;
     }
+    
+    .middleSection .searchBox {
+        border: 2px solid #ccc;
+        display: block;
+        margin: 0 auto;
+        padding: 8px 12px;
+        border-radius: 14px;
+        text-color: #ffffff;
+        background: rgba(192,192,192,0.4);
+    }
+
+    .middleSection .searchBox input {
+        width: 170px;
+        height: 25px;
+        border: 0;
+        outline: 0;
+        background: rgba(192,192,192,0.4);
+    }
+
+    .middleSection .seachBox input::placeholder {
+        text-color: #ffffff;
+        font-size: 27px;
+        background: rgba(192,192,192,0.4);
+    }
 }
 
 @media screen and (min-width: 981px) {
