@@ -34,6 +34,7 @@ body {
 .topSection .homeButton  ion-icon {
     font-size: 25px;
     color: white;
+    -webkit-box-reflect: below;
 }
 
 .middleSection {
@@ -102,7 +103,7 @@ div.desc {
     text-align: center;
   }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 735px) {
     
     .topSection .homeButton  ion-icon {
         font-size: 40px;
